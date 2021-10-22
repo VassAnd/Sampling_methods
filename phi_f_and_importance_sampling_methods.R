@@ -45,7 +45,7 @@ for(i in 1:k2)
 {
   u2 <- runif(n.sim2) # draws fron Uniform(0,1)
   x2 <- 2/u2  # inverse transform sampling method
-  theta_hut2[i] <- mean(h(x2)*(x2^2)/(2*pi*(1+x2^2)))  # calc of È hut integral
+  theta_hut2[i] <- mean(h(x2)*(x2^2)/(2*pi*(1+x2^2)))  # calc of hut integral
 }
 mean(theta_hut2);sd(theta_hut2);var(theta_hut2)
 ## 0.1475283       # mean
