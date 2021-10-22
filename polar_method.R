@@ -1,4 +1,4 @@
-PolarMethod1<-function(N)
+PolarMethod<-function(N)
 {
 
   x<-numeric(N)
@@ -27,6 +27,6 @@ PolarMethod1<-function(N)
 
   return(z)
 }
-z<-PolarMethod1(100000)
+z<-PolarMethod(10000)
 hist(z,freq=F,ylab="Density",xlab=" z values")
 curve(dnorm(x),from=-3,to=3,add=TRUE)
