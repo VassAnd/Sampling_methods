@@ -1,3 +1,4 @@
+# Marsaglia polar method
 PolarMethod<-function(N)
 {
   x<-numeric(N)
