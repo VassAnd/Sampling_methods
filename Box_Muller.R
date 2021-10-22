@@ -1,5 +1,4 @@
-## Box - Muller
-#
+## Box - Muller sampling method
 set.seed <- c(2442)
 n.sim = 15000
 N12 <- matrix(0, ncol=2, nrow=n.sim)
@@ -19,6 +18,6 @@ plot(N12)
 n <- rnorm(15000)
 mean(n);sd(n)
 #-------- compare plots Box-Muller vs rnorm --------------------
-plot(density(N12),col="2", main=" Box - Muller μέθοδος\n n.sim = 15000 ζεύγη τιμών")
+plot(density(N12),col="2", main=" Box - Muller Γ¬ΓΓ¨Γ―Γ¤Γ―Γ²\n n.sim = 15000 Γ¦Γ¥Γ½Γ£Γ§ Γ΄Γ©Γ¬ΓΎΓ­")
 lines(density(n), col="4")
 legend(1.6,0.38, legend=c("Box-Muller", "rnorm"),col=c(2, 4),lty=1 ,cex=0.8)
